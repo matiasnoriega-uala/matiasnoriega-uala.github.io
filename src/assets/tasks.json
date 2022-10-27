@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "title": "Lavar Platos",
+        "desc": "lavar los platos para la cena"
+    },
+    {
+        "id": 2,
+        "title": "Pasear al Perro",
+        "desc": "Sacar a pasear al perro a las 20hs"
+    },
+    {
+        "id": 3,
+        "title": "Cambiar Aceite Moto",
+        "desc": "Cambiarle el aceite a la moto que ya se cumplieron los 4.000km"
+    }
+]
