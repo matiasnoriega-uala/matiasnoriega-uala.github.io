@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import ts from "./assets/tasks";
 import Task from "./Task";
 
@@ -7,7 +8,7 @@ function TaskList() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [task, setTask] = useState({});
+  const [task, setTask] = useState(null);
 
   useEffect(() => {
     setTasks(ts);
@@ -54,8 +55,17 @@ function TaskList() {
           </button>
         );
       })}
-      <h2>Tarea</h2>
-      {task ? <Task task={task} /> : <></>}
+
+      {task ? (
+        <>
+          <h2>Tarea</h2>
+          <Task task={task} />
+        </>
+      ) : (
+        <></>
+      )}
+      <hr />
+      <Link to="/">Volver</Link>
     </>
   );
 }

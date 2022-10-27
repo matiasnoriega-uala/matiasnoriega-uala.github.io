@@ -1,5 +1,5 @@
 import TaskList from "./TaskList";
-import Task from "./Task";
+import Home from "./Home";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<TaskList />} />
-          <Route path="task/:id" element={<Task />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/tasklist" element={<TaskList />} />
         </Routes>
       </BrowserRouter>
 
